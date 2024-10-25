@@ -18,10 +18,9 @@ int arr[ARRSIZE];
 int f1(int* arr, int n, int& x)
 {
     int sum = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n/2; i++)
     {
-        if (i >= 0 and i < n/2)
-        sum += arr[i];
+       sum += arr[i];
     }
     return sum;
 }
@@ -29,9 +28,8 @@ int f1(int* arr, int n, int& x)
 int f2(int* arr, int n, int& x)
 {
     int sum = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = n/2; i < n; i++)
     {
-        if(i>=n/2 and i<n)
         sum += arr[i];
     }
     return sum;
